@@ -97,10 +97,10 @@ Supply URL.
 
 Discover HTTP servers with PUT method enabled (uses Scapy package).  
 This script will generate 50 threads by default, each of them will:  
-	+ Generate Random public IP address  	
+	+ generate Random public IP address  	
 	+ probe port 80 using single SYN packet  
-	+ if port is open - send HTTP OPTIONS method request to see available methods.  
-	+ if PUT method in response - try to put /index.txt (empty file).  
+	+ if port is open - send HTTP OPTIONS method request to see available methods  
+	+ if PUT method in response - try to put /index.txt (empty file)  
 	+ if PUTed successfuly - print server :)
 	
 
@@ -155,7 +155,7 @@ Simple TCP listener, logs connections and data sent to it.
 
 Discover TCP servers (uses Scapy package).  
 This script will generate 50 threads by default, each of them will:  
-	+ Generate Random public IP address  	
+	+ generate Random public IP address  	
 	+ probe one of the TCP ports supplied using single SYN packet  
 	+ if port is open - print the server :)  
 	+ optional: print geolocation for each of them  
