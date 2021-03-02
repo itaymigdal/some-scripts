@@ -1,4 +1,4 @@
-﻿# script for list executed programs on a machine
+﻿# script for list executed programs on a windows machine
 
 [string[]]$list=$null
 $ErrorActionPreference='silentlycontinue'
