@@ -68,7 +68,7 @@ def main():
                                      epilog="--------------------------------------------------------------------")
     main_group = parser.add_argument_group("arguments")
     main_group.add_argument("-url", metavar="<URL>", help="Base URL", required=True)
-    main_group.add_argument("-F", metavar="<WORDLIST>", help="files & dirs Wordlist")
+    main_group.add_argument("-F", metavar="<WORDLIST>", help="files & dirs wordlist")
     main_group.add_argument("-T", metavar="<SECONDS>", type=float, help="Timeout between each request (default: none)",
                             default=0)
     args = parser.parse_args()
