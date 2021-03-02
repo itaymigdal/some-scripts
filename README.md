@@ -65,7 +65,7 @@ This script will generate 50 threads by default, each of them will:
 ### Find-String.ps1
 
 Find specific string in files.  
-Supply string to search and base path, the script will search string occurances recursively in all files, and will print whhere it was found.  
+Supply string to search and base path, the script will search string occurances recursively in all files, and will print where it was found.  
 Usage example:  
 .\Find-String.ps1 -string password -path C:\Users\Owner\Desktop
 
