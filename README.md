@@ -34,7 +34,7 @@ if you want to decode - use Byte_Encoder.py.
 
 Hex key Encoder.  
 Supply input, operation and key.  
-Suppurts 4 inputs: string, file, hex string, file contains hex string.  
+Supports 4 inputs: string, file, hex string, file contains hex string.  
 Supports XOR and ADD operations.
 
 
@@ -54,7 +54,7 @@ Supply Target, user to brute-force and passwords wordlist.
 
 Discover open FTP servers with Anonymous login (uses Scapy package).  
 This script will generate 50 threads by default, each of them will:  
-	+ Generate Random public IP address	  
+	+ generate random public IP address	  
 	+ probe port 21 using single SYN packet  
 	+ if port is open - try to connect to FTP server  
 	+ if connected successfuly - try to login with anonymous user  
@@ -97,9 +97,9 @@ Supply URL.
 
 Discover HTTP servers with PUT method enabled (uses Scapy package).  
 This script will generate 50 threads by default, each of them will:  
-	+ generate Random public IP address  	
+	+ generate random public IP address  	
 	+ probe port 80 using single SYN packet  
-	+ if port is open - send HTTP OPTIONS method request to see available methods  
+	+ if port is open - send HTTP OPTIONS request to see available methods  
 	+ if PUT method in response - try to put /index.txt (empty file)  
 	+ if PUTed successfuly - print server :)
 	
@@ -113,14 +113,14 @@ Search for IPV4's, domains, URL's, emails.
 ### PassAmplifyer.py
 
 Create passwords wordlist for a user.  
-Supply small wordlist file of possible strings (like name, hobby, or favourite pet), and define which functions to use in order to amlify wordlist.
+Supply small wordlist file of possible strings (like name, hobby, or favourite pet), and define which functions to use in order to amplify wordlist.
 
 
 ### Remcos_Config_Decrypter.py
 
 Decrypt Remcos RAT config.  
 make sure you are looking at the unpacked binary which has "SETTINGS" resource (RC4 encrypted).  
-Extract this resource (with Pestudio \ Resource hacker \ any other tool) and supply it as an argument to this script wich will decrypt it for you :)
+Extract this resource (with Pestudio \ Resource hacker \ any other tool) and supply it as an argument to this script which will decrypt it for you :)
 
 
 ### Shodanski.py
@@ -155,7 +155,7 @@ Simple TCP listener, logs connections and data sent to it.
 
 Discover TCP servers (uses Scapy package).  
 This script will generate 50 threads by default, each of them will:  
-	+ generate Random public IP address  	
+	+ generate random public IP address  	
 	+ probe one of the TCP ports supplied using single SYN packet  
 	+ if port is open - print the server :)  
 	+ optional: print geolocation for each of them  
