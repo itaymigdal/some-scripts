@@ -63,7 +63,7 @@ def validations(args):
 
 def main():
     # arguments
-    parser = argparse.ArgumentParser(description="Subdomains Enumaration and Zone Transfer Check")
+    parser = argparse.ArgumentParser(description="DNS Zone Transfer audit and Subdomain Enumaration")
     parser.add_argument("-D", metavar="<DOMAIN>", help="Domain to Brute-Force", required=True, type=str)
     parser.add_argument("-SD", metavar="<FILE>", help="SubDomains file to Brute with", type=str, required=False,
                         default=None)
