@@ -22,8 +22,8 @@ Can iterate (e.g. encode "some string" 4 iterations).
 ### Byte_Decoder_Bruter.py
 
 Single-Byte decoder / brute-forcer.  
+Supports 4 inputs: string, file, hex string, file contains hex string.
 Supports XOR and ADD operations.  
-Supports 4 inputs: string, file, hex string, file contains hex string.  
 Use case example:  
 you have some XORed data and don't know the key?  
 This script wil Brute-Force it for you and HexDump all results (Don't forget to output into file, so you could search strings easily).  
