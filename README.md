@@ -116,6 +116,12 @@ Create passwords wordlist for a user.
 Supply small wordlist file of possible strings (like name, hobby, or favourite pet), and define which functions to use in order to amplify wordlist.
 
 
+### Powershell_Obfuscator.py
+
+Obfuscator for powershell scripts.
+Can remove comments, add garbage comments, rename function names and variables, output CMD oneliner for executing encoded powershell scriptblock, and more.
+
+
 ### Remcos_Config_Decrypter.py
 
 Decrypt Remcos RAT config.  
