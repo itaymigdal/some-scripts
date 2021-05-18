@@ -110,6 +110,12 @@ Parse network IOC's from a text file (like dumped strings from ProcessHacker).
 Search for IPV4's, domains, URL's, emails.
 
 
+### Out-MiniDump.ps1
+
+MiniDump any process (by PID or by name) using comsvcs.dll.
+Default is Lsass.exe.
+
+
 ### PassAmplifyer.py
 
 Create passwords wordlist for a user.  
