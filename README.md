@@ -147,6 +147,11 @@ make sure you are looking at the unpacked binary which has "SETTINGS" resource (
 Extract this resource (with Pestudio \ Resource hacker \ any other tool) and supply it as an argument to this script which will decrypt it for you :)
 
 
+### RTLO-File.ps1
+
+Right To Left Override social engineering attack. make evil files look innocent.
+
+
 ### Shodanski.py
 
 Simple script to interact with Shodan API (uses the official Shodan package for python).  
