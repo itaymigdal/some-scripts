@@ -1,8 +1,8 @@
-﻿param
+param
 (
-   [string] $real_extension,
-   [string] $fake_extension,
-   [string] $file_path
+   [Parameter(Mandatory=$true)][string] $real_extension,
+   [Parameter(Mandatory=$true)][string] $fake_extension,
+   [Parameter(Mandatory=$true)][string] $file_path
 )
 
 $rtlo_encoding = [char]0x202e
