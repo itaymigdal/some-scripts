@@ -38,7 +38,7 @@ def main():
         print(f"[-] Error: Could not write memory to {pid}")
         exit(1)
 
-    # Resolve LoadLibraryA address (for injected process)
+    # Resolve LoadLibraryA address
     h_kernel32 = windll.kernel32.GetModuleHandleA("kernel32.dll".encode())
     h_loadlibrary = windll.kernel32.GetProcAddress(h_kernel32, "LoadLibraryA".encode())
 
