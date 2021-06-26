@@ -104,6 +104,13 @@ This script will generate 50 threads by default, each of them will:
 	+ if PUTed successfuly - print server :)
 	
 
+### Inject_DLL32.py
+
+Inject DLL to a target process. 
+Supply DLL path and target PID.
+make sure the python process, the dll, and the target process are in same architecture (32/64).
+
+
 ### IOC_Parser.py
 
 Parse network IOC's from a text file (like dumped strings from ProcessHacker).  
@@ -126,6 +133,11 @@ Supply small wordlist file of possible strings (like name, hobby, or favourite p
 
 Obfuscator for powershell scripts.
 Can remove comments, add garbage comments, rename function names and variables, output CMD oneliner for executing encoded powershell scriptblock, and more.
+
+
+### Privesc_Unquoted_Service.py
+
+Checks for Unquoted service vulnerability on windows os.
 
 
 ### Remcos_Config_Decrypter.py
