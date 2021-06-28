@@ -44,10 +44,21 @@ DNS Zone Transfer audit and Subdomain Enumaration.
 Supply domain and subdomains wordlist file.
 
 
+
+### Find-String.ps1
+
+Find specific string in files.  
+Supply string to search and base path, the script will search string occurances recursively in all files, and will print where it was found.  
+Usage example:  
+.\Find-String.ps1 -string password -path C:\Users\Owner\Desktop
+
+
+
 ### FTP_Bruter.py
 
 Brute-Force FTP login.  
 Supply Target, user to brute-force and passwords wordlist.  
+
 
 
 ### FTP_Discover.py
@@ -62,12 +73,11 @@ This script will generate 50 threads by default, each of them will:
 	+ if found - Print server :)
 	
 
-### Find-String.ps1
 
-Find specific string in files.  
-Supply string to search and base path, the script will search string occurances recursively in all files, and will print where it was found.  
-Usage example:  
-.\Find-String.ps1 -string password -path C:\Users\Owner\Desktop
+### Get-ExecutedProgramsFromRegistry.ps1
+
+List Executed programs on a windows machine from known registry paths.
+
 
 
 ### GDE.pyw (Google Dorks Explorer)
@@ -210,10 +220,3 @@ Edit the script to add your VT API key.
 
 Simple XORing of files.
  
-
-
-
-
-
-
-
