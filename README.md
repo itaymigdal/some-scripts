@@ -139,6 +139,11 @@ Create passwords wordlist for a user.
 Supply small wordlist file of possible strings (like name, hobby, or favourite pet), and define which functions to use in order to amplify wordlist.
 
 
+### Persist-SilentProcessExit.ps1
+
+Persist Thru registry using this awsome technique: https://oddvar.moe/2018/04/10/persistence-using-globalflags-in-image-file-execution-options-hidden-from-autoruns-exe/
+
+
 ### Powershell_Obfuscator.py
 
 Obfuscator for powershell scripts.
@@ -220,3 +225,10 @@ Edit the script to add your VT API key.
 
 Simple XORing of files.
  
+
+
+
+
+
+
+
