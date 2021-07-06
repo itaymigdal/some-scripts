@@ -109,7 +109,7 @@ This script will generate 50 threads by default, each of them will:
 	+ if PUTed successfuly - print server :)
 	
 
-### Inject_DLL32.py
+### Inject_DLL.py
 
 Inject DLL to a target process. 
 Supply DLL path and target PID.
