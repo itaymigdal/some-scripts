@@ -86,11 +86,6 @@ GUI Program for google dorking without open the browser :)
 Uses the great python package googlesearch.
 
 
-### Get-ExecutedPrograms.ps1
-
-Script that lists executed programs on a windows machine by searching in known registry paths.
-
-
 ### HTTP_Enum.py
 
 Enumarate HTTP files and directories (Forced-browse).  
