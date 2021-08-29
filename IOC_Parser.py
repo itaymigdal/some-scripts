@@ -205,8 +205,8 @@ def main():
         exit(1)
 
     # search ipv4s
-    suspected_ipv6s = re.findall(re_ipv4, input_data)
-    for suspected_ipv4 in suspected_ipv6s:
+    suspected_ipv4s = re.findall(re_ipv4, input_data)
+    for suspected_ipv4 in suspected_ipv4s:
         if validate_ipv4(suspected_ipv4) and (suspected_ipv4 not in list_ipv4s):
             list_ipv4s.append(suspected_ipv4)
     list_ipv4s.sort()
