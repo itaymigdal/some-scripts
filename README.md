@@ -38,6 +38,11 @@ Supports 4 inputs: string, file, hex string, file contains hex string.
 Supports XOR and ADD operations.
 
 
+### CobaltStrike_TeamServer_Auditor.py
+
+Audit Cobalt Strike teamserver and listeners for default settings.
+
+
 ### DNS_Enum.py
 
 DNS Zone Transfer audit and Subdomain Enumaration.  
