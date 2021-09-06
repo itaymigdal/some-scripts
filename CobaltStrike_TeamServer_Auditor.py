@@ -8,13 +8,13 @@ from sys import argv
 
 
 script_banner = """
-   _____      _           _ _    _____ _        _ _          _______                    _____                                              _ _ _             
-  / ____|    | |         | | |  / ____| |      (_) |        |__   __|                  / ____|                              /\            | (_) |            
- | |     ___ | |__   __ _| | |_| (___ | |_ _ __ _| | _____     | | ___  __ _ _ __ ___ | (___   ___ _ ____   _____ _ __     /  \  _   _  __| |_| |_ ___  _ __ 
- | |    / _ \| '_ \ / _` | | __|\___ \| __| '__| | |/ / _ \    | |/ _ \/ _` | '_ ` _ \ \___ \ / _ \ '__\ \ / / _ \ '__|   / /\ \| | | |/ _` | | __/ _ \| '__|
- | |___| (_) | |_) | (_| | | |_ ____) | |_| |  | |   <  __/    | |  __/ (_| | | | | | |____) |  __/ |   \ V /  __/ |     / ____ \ |_| | (_| | | || (_) | |   
-  \_____\___/|_.__/ \__,_|_|\__|_____/ \__|_|  |_|_|\_\___|    |_|\___|\__,_|_| |_| |_|_____/ \___|_|    \_/ \___|_|    /_/    \_\__,_|\__,_|_|\__\___/|_|   
-                                                                                                                                                                                                                                                                                                                          
+   _____      _           _ _      _____ _        _ _           _____                                              _ _ _             
+  / ____|    | |         | | |    / ____| |      (_) |         / ____|                              /\            | (_) |            
+ | |     ___ | |__   __ _| | |_  | (___ | |_ _ __ _| | _____  | (___   ___ _ ____   _____ _ __     /  \  _   _  __| |_| |_ ___  _ __ 
+ | |    / _ \| '_ \ / _` | | __|  \___ \| __| '__| | |/ / _ \  \___ \ / _ \ '__\ \ / / _ \ '__|   / /\ \| | | |/ _` | | __/ _ \| '__|
+ | |___| (_) | |_) | (_| | | |_   ____) | |_| |  | |   <  __/  ____) |  __/ |   \ V /  __/ |     / ____ \ |_| | (_| | | || (_) | |   
+  \_____\___/|_.__/ \__,_|_|\__| |_____/ \__|_|  |_|_|\_\___| |_____/ \___|_|    \_/ \___|_|    /_/    \_\__,_|\__,_|_|\__\___/|_|   
+                                                                                                                                                                                                                                                                                                                                                                                                                                                       
 """
 
 
@@ -70,15 +70,15 @@ def check_http_response(ip, port):
         protocol = "https"
     try:
         response = requests.get(f"{protocol}://{ip}:{port}/", verify=False)
+        if response.status_code == 404 and response.headers["Content-Type"] == "text/plain":
+            print(f"[+] Found Cobalt Strike default {protocol} response at [{ip}:{port}]!")
+        else:
+            print(f"[-] No default {protocol} response at [{ip}:{port}]")        
+            return
     except Exception:
-        print(f"[-] No default {protocol} response at [{ip}:{port}]")
+        print(f"[-] Could not retrieve {protocol} response at [{ip}:{port}]")
         return
-    if response.status_code == 404 and response.headers["Content-Type"] == "text/plain":
-        print(f"[+] Found Cobalt Strike default {protocol} response at [{ip}:{port}]!")
-        return
-    else:
-        print(f"[-] No default {protocol} response at [{ip}:{port}]")        
-        return
+
 
 
 def check_teamserver(ip):
