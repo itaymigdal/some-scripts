@@ -38,7 +38,7 @@ Supports 4 inputs: string, file, hex string, file contains hex string.
 Supports XOR and ADD operations.
 
 
-### CobaltStrike_TeamServer_Auditor.py
+### CobaltStrike_Server_Auditor.py
 
 Audit Cobalt Strike teamserver and listeners for default settings.
 
@@ -49,7 +49,6 @@ DNS Zone Transfer audit and Subdomain Enumaration.
 Supply domain and subdomains wordlist file.
 
 
-
 ### Find-String.ps1
 
 Find specific string in files.  
@@ -58,12 +57,10 @@ Usage example:
 .\Find-String.ps1 -string password -path C:\Users\Owner\Desktop
 
 
-
 ### FTP_Bruter.py
 
 Brute-Force FTP login.  
 Supply Target, user to brute-force and passwords wordlist.  
-
 
 
 ### FTP_Discover.py
@@ -78,11 +75,9 @@ This script will generate 50 threads by default, each of them will:
 	+ if found - Print server :)
 	
 
-
 ### Get-ExecutedProgramsFromRegistry.ps1
 
 List Executed programs on a windows machine from known registry paths.
-
 
 
 ### GDE.pyw (Google Dorks Explorer)
@@ -225,10 +220,5 @@ Edit the script to add your VT API key.
 
 Simple XORing of files.
  
-
-
-
-
-
 
 
