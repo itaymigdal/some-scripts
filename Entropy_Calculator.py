@@ -17,6 +17,8 @@ def print_help():
 def calc_shannon_entropy(byte_array):
 
 	byte_array_length = len(byte_array)
+	if byte_array_length == 0:
+		return 0
 	byte_counts = []  # list of counters for each byte [0-255] in byte array
 	entropy = 0.0     
 
@@ -38,12 +40,22 @@ def calc_shannon_entropy(byte_array):
 
 def pe_parsing(pe_file):
 
-	print("=====================")
+	# getting total pe length for proportion calculation
+	total_pe_length = 0
+	for section in pe_file.sections:
+		total_pe_length += len(section.get_data())
+
+	# calculate entropy for each section
+	print("===================================")
+	print("  SECTION  |  ENTROPY  | PROPORTION")
+	print("===================================")
+
 	for section in pe_file.sections:
 		byte_array = list(section.get_data())
 		entropy = calc_shannon_entropy(byte_array)
-		print("[+]", section.Name.decode().ljust(10), "{:.3f}".format(entropy))
-	print("=====================")
+		propotrion_percent = len(byte_array) * 100 / total_pe_length
+		print("[+]", section.Name.decode().ljust(10), "{:.3f}".format(entropy).ljust(10), "{:.3f}%".format(propotrion_percent))
+	print("===================================")
 
 
 def basic_parsing(file):
