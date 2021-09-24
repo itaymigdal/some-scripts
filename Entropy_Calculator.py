@@ -46,16 +46,16 @@ def pe_parsing(pe_file):
 		total_pe_length += len(section.get_data())
 
 	# calculate entropy for each section
-	print("===================================")
-	print("  SECTION  |  ENTROPY  | PROPORTION")
-	print("===================================")
-
+	print("====================================")
+	print("  SECTION  |  ENTROPY  |  PROPORTION")
+	print("====================================")
+	
 	for section in pe_file.sections:
 		byte_array = list(section.get_data())
 		entropy = calc_shannon_entropy(byte_array)
 		propotrion_percent = len(byte_array) * 100 / total_pe_length
 		print("[+]", section.Name.decode().ljust(10), "{:.3f}".format(entropy).ljust(10), "{:.3f}%".format(propotrion_percent))
-	print("===================================")
+	print("====================================")
 
 
 def basic_parsing(file):
