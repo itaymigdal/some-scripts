@@ -49,6 +49,12 @@ DNS Zone Transfer audit and Subdomain Enumaration.
 Supply domain and subdomains wordlist file.
 
 
+### Entropy_Calculator
+
+Calculate shannon entropy for a given file.
+for PE files calculates for each section.
+
+
 ### Find-String.ps1
 
 Find specific string in files.  
@@ -220,5 +226,4 @@ Edit the script to add your VT API key.
 
 Simple XORing of files.
  
-
 
