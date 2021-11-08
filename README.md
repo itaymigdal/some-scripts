@@ -128,6 +128,11 @@ Parse network IOC's from a text file (like dumped strings from ProcessHacker).
 Search for IPV4's, domains, URL's, emails.
 
 
+### NimWrap.py
+
+Wrap a windows shell command with compiled binary using nim.
+
+
 ### Out-MiniDump.ps1
 
 MiniDump any process (by PID or by name) using comsvcs.dll.
