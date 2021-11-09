@@ -92,7 +92,7 @@ def wrap_dll(command, out_file, is_strenc, keep_source):
 def main():
 
     # Build Arguments
-    parser = argparse.ArgumentParser(description="Wrap a windows shell command with compiled binary using nim")
+    parser = argparse.ArgumentParser(description="Wrap a windows shell command with compiled binary using nim. Nim + Winim package should be installed.")
     input_group = parser.add_mutually_exclusive_group()
     input_group.add_argument("-s", metavar="<command>", help="Input as shell command")
     input_group.add_argument("-i", metavar="<file name>", help="Input from file contains shell command")
