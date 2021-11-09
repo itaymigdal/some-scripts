@@ -131,6 +131,8 @@ Search for IPV4's, domains, URL's, emails.
 ### NimWrap.py
 
 Wrap a windows shell command with compiled binary using nim.
+Nim + Winim package should be installed. 
+to encrypt shell command (-e option) nim-strenc should be installed as well.
 
 
 ### Out-MiniDump.ps1
