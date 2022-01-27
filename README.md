@@ -1,5 +1,7 @@
 # intro
-This repo contains some Cyber Security related scripts i have written over time (since i was a nooby to present) 
+
+This repo contains some Cyber Security related scripts i have written over time (some were when I was still a nooby) 
+
 
 
 ### ARP_Network_Scanner.py
