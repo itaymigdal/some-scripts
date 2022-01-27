@@ -1,5 +1,6 @@
-# infosec-scripts
-Some InfoSec Scripts
+# intro
+This repo contains some Cyber Security related scripts i have written over time (since i was a nooby to present) 
+
 
 ### ARP_Network_Scanner.py
 
