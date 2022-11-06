@@ -54,6 +54,11 @@ DNS Zone Transfer audit and Subdomain Enumaration.
 Supply domain and subdomains wordlist file.
 
 
+### DNS_Logger.py
+
+Log local DNS requests.
+
+
 ### Entropy_Calculator
 
 Calculate shannon entropy for a given file.
