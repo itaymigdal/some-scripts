@@ -48,6 +48,11 @@ Supports XOR and ADD operations.
 Audit Cobalt Strike teamserver and listeners for default settings.
 
 
+### DLL_Export_Dumper.py
+
+Dump DLL exports recursively
+
+
 ### DNS_Enum.py
 
 DNS Zone Transfer audit and Subdomain Enumaration.  
@@ -178,6 +183,11 @@ Checks for Unquoted service vulnerability on windows os.
 Decrypt Remcos RAT config.  
 make sure you are looking at the unpacked binary which has "SETTINGS" resource (RC4 encrypted).  
 Extract this resource (with Pestudio \ Resource hacker \ any other tool) and supply it as an argument to this script which will decrypt it for you :)
+
+
+### Replace-Clipboard.ps1
+
+PoC for constantly scanning the clipboard for interesting patterns and replace then once they found (typically for wallt swapping)
 
 
 ### RTLO-File.ps1
