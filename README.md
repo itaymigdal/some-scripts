@@ -50,7 +50,7 @@ Audit Cobalt Strike teamserver and listeners for default settings.
 
 ### DLL_Export_Dumper.py
 
-Dump DLL exports recursively
+Dump DLL exports recursively.
 
 
 ### DNS_Enum.py
@@ -187,7 +187,7 @@ Extract this resource (with Pestudio \ Resource hacker \ any other tool) and sup
 
 ### Replace-Clipboard.ps1
 
-PoC for constantly scanning the clipboard for interesting patterns and replace then once they found (typically for wallt swapping)
+PoC for constantly scanning the clipboard for interesting patterns and replace then once they found (typically for wallt swapping).
 
 
 ### RTLO-File.ps1
