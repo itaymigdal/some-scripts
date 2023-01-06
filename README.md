@@ -164,7 +164,7 @@ Supply small wordlist file of possible strings (like name, hobby, or favourite p
 
 ### Persist-SilentProcessExit.ps1
 
-Persist Thru registry using this awsome technique: https://oddvar.moe/2018/04/10/persistence-using-globalflags-in-image-file-execution-options-hidden-from-autoruns-exe/
+Persist Thru registry using this [awsome technique](https://oddvar.moe/2018/04/10/persistence-using-globalflags-in-image-file-execution-options-hidden-from-autoruns-exe/)
 
 
 ### Powershell_Obfuscator.py
@@ -236,6 +236,11 @@ This script will generate 50 threads by default, each of them will:
 ### TCP_SYN_Scanner.py
  
 Simple TCP SYN scanner (uses Scapy package).  
+
+
+### Test-Nimbo-C2.py
+
+Test if the supplied URL is [Nimbo-C2](https://github.com/itaymigdal/Nimbo-C2).
 
 
 ### UDP_Scanner.py
