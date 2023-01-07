@@ -27,7 +27,7 @@ def _test_nimbo_intruder(suspected_nimbo_c2):
 
 def test_nimbo_c2(suspected_nimbo_c2):
     try:
-        if _test_nimbo_new_agent(suspected_nimbo_c2) and _test_nimbo_intruder(suspected_nimbo_c2):
+        if _test_nimbo_intruder(suspected_nimbo_c2) and _test_nimbo_new_agent(suspected_nimbo_c2):
             return True
         else:
             return False
