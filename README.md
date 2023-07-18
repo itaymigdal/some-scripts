@@ -55,7 +55,7 @@ Dump DLL exports recursively.
 
 ### DNS_Enum.py
 
-DNS Zone Transfer audit and Subdomain Enumaration.  
+DNS Zone Transfer audit and Subdomain enumeration.  
 Supply domain and subdomains wordlist file.
 
 
@@ -70,12 +70,22 @@ Calculate shannon entropy for a given file.
 for PE files calculates for each section.
 
 
+### Extract_Syscalls.py
+
+Extract SSNs from ntdll.dll file.
+
+
 ### Find-String.ps1
 
 Find specific string in files.  
-Supply string to search and base path, the script will search string occurances recursively in all files, and will print where it was found.  
+Supply string to search and base path, the script will search string occurrences recursively in all files, and will print where it was found.  
 Usage example:  
 .\Find-String.ps1 -string password -path C:\Users\Owner\Desktop
+
+
+### frida-tree-patch-sleep.py
+
+Patch the lowest sleep function - NtDelayExecution, of a whole process tree.
 
 
 ### FTP_Bruter.py
@@ -91,8 +101,8 @@ This script will generate 50 threads by default, each of them will:
 	+ generate random public IP address	  
 	+ probe port 21 using single SYN packet  
 	+ if port is open - try to connect to FTP server  
-	+ if connected successfuly - try to login with anonymous user  
-	+ if login successfuly - try to list files in current directory (to avoid FP's)  
+	+ if connected successfully - try to login with anonymous user  
+	+ if login successfully - try to list files in current directory (to avoid FP's)  
 	+ if found - Print server :)
 	
 
@@ -103,7 +113,7 @@ List Executed programs on a windows machine from known registry paths.
 
 ### HTTP_Enum.py
 
-Enumarate HTTP files and directories (Forced-browse).  
+Enumerate HTTP files and directories (Forced-browse).  
 Supply base URL and wordlist.
 
 
@@ -121,7 +131,7 @@ This script will generate 50 threads by default, each of them will:
 	+ probe port 80 using single SYN packet  
 	+ if port is open - send HTTP OPTIONS request to see available methods  
 	+ if PUT method in response - try to put /index.txt (empty file)  
-	+ if PUTed successfuly - print server :)
+	+ if PUTed successfully - print server :)
 	
 
 ### Inject_DLL.py
@@ -153,12 +163,12 @@ Default is Lsass.exe.
 ### PassAmplifyer.py
 
 Create passwords wordlist for a user.  
-Supply small wordlist file of possible strings (like name, hobby, or favourite pet), and define which functions to use in order to amplify wordlist.
+Supply small wordlist file of possible strings (like name, hobby, or favorite pet), and define which functions to use in order to amplify wordlist.
 
 
 ### Persist-SilentProcessExit.ps1
 
-Persist Thru registry using this [awsome technique](https://oddvar.moe/2018/04/10/persistence-using-globalflags-in-image-file-execution-options-hidden-from-autoruns-exe/)
+Persist Thru registry using this [awesome technique](https://oddvar.moe/2018/04/10/persistence-using-globalflags-in-image-file-execution-options-hidden-from-autoruns-exe/)
 
 
 ### Powershell_Obfuscator.py
@@ -181,12 +191,17 @@ Extract this resource (with Pestudio \ Resource hacker \ any other tool) and sup
 
 ### Replace-Clipboard.ps1
 
-PoC for constantly scanning the clipboard for interesting patterns and replace then once they found (typically for wallt swapping).
+PoC for constantly scanning the clipboard for interesting patterns and replace then once they found (typically for wallet swapping).
 
 
 ### RTLO-File.ps1
 
 Right To Left Override social engineering attack. make evil files look innocent.
+
+
+### Screenshot.ps1
+
+Take screenshot of all displays.
 
 
 ### Shodanski.py
