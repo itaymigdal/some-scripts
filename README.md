@@ -101,12 +101,6 @@ This script will generate 50 threads by default, each of them will:
 List Executed programs on a windows machine from known registry paths.
 
 
-### GDE.pyw (Google Dorks Explorer)
-
-GUI Program for google dorking without open the browser :)  
-Uses the great python package googlesearch.
-
-
 ### HTTP_Enum.py
 
 Enumarate HTTP files and directories (Forced-browse).  
